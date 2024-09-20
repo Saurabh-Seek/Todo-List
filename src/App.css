@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  justify-content: space-between;
+}
+
+.mainContainer {
+  height: 700px; 
+  background-color: #ede5e5;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  border-radius: 25px;
+  width: 35%;
+  height: 550px;
+  display: flex;
+  padding: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #808080; 
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 25px;
+  border: #808080;
+}
+
+.addButton, 
+.CompleteButton, 
+.deleteButton, 
+.editButton {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.addButton {
+  background-color: #4caf50;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.CompleteButton {
+  background-color: #4caf50;
+  border-radius: 25px;
+}
+
+.deleteButton {
+  background-color: #cb8282;
+  border-radius: 25px;
+}
+
+.editButton {
+  background-color: gray;
+  border-radius: 25px;
+}
+
+.tabsContainer,
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabButton,
+.filterButton {
+  padding: 10px 20px;
+  margin: 0 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+
+.taskListContainer {
+  width: 65%;
+  padding: 20px; 
+  height: 500px; 
+  overflow-y: auto; 
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+}
+
+.taskList {
+  list-style: none;
+  padding-left: 0;
+  margin: 0; 
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 25px;
+  margin-top: 10px; 
+  padding: 20px;
+}
+
+.completedText {
+  color: green;
+  font-weight: bold;
+  margin-left: 10px;
+}

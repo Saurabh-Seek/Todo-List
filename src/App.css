@@ -1,3 +1,4 @@
+
 .container {
   display: flex;
   padding: 20px;
@@ -61,17 +62,14 @@
 
 .CompleteButton {
   background-color: #4caf50;
-  border-radius: 25px;
 }
 
 .deleteButton {
   background-color: #cb8282;
-  border-radius: 25px;
 }
 
 .editButton {
   background-color: gray;
-  border-radius: 25px;
 }
 
 .tabsContainer,
@@ -88,16 +86,18 @@
   border: 1px solid #ccc;
   cursor: pointer;
   border-radius: 10px;
-  
 }
 
 .taskListContainer {
-  width: 65%;
-  padding: 20px; 
-  height: 500px; 
-  overflow-y: auto; 
-  margin-top: 20px; 
-  margin-bottom: 10px; 
+  width: 60%;
+  padding: 20px;
+  height: 500px;
+  overflow-y: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .taskList {
@@ -117,8 +117,109 @@
   padding: 20px;
 }
 
-.completedText {
-  color: green;
-  font-weight: bold;
-  margin-left: 10px;
+.taskButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.addButton, 
+.CompleteButton, 
+.deleteButton, 
+.editButton {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputContainer, .taskListContainer {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .filterContainer {
+    flex-direction: row;
+  }
+
+  .tabButton, .filterButton {
+    margin: 5px 10px;
+    font-size: 14px;
+  }
+
+  .taskItem {
+    align-items: flex-start;
+  }
+
+  .taskButtons {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+
+  .taskListContainer {
+    padding: 15px;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 5px;
+  }
+
+  .addButton {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .tabButton, .filterButton {
+    padding: 8px 10px;
+    margin: 0 5px;
+    font-size: 12px;
+  }
+
+  .filterContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .taskItem {
+    padding: 10px;
+    display: flex;
+  }
+
+  .taskButtons {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .taskListContainer {
+    padding: 10px;
+    height: auto;
+  }
+
+  .taskItem {
+    padding: 10px;
+  flex-direction: column-reverse;
+  }
+
+  .addButton, 
+  .CompleteButton, 
+  .deleteButton, 
+  .editButton {
+    padding: 8px;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 5px;
+  }
 }
